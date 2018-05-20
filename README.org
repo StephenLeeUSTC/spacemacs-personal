@@ -1,23 +1,28 @@
 * My personal Emacs configuration
-Hacking journey begins start from 2013.
+  Fork from zilongshanren and migirate from vim.
 
-It was written for Emacs 25.1+ on MacOS 10.11+
+  It was written for Emacs 25.1+ on MacOS 10.11+
 
 ** How to use
-Follow the install instruction here: https://github.com/zilongshanren/spacemacs#install ,
-make sure your are using the fork repo: https://github.com/zilongshanren/spacemacs
+   This is a spacemacs personal configuration copied from zilongshanren, to use it:
+   First follow the rules of spacemacs and install the develop branch
+   # +BEGIN_SRC shell
+   git clone https://github.com/syl20bnr/spacemacs.git ~/.emacs.d/ -b develop
+   # +END_SRC
 
-Why use the forked repo?  What's the difference between the forked repo and the original repo?
+   Then clone this project
+   # +BEGIN_SRC shell
+   git clone https://github.com/StephenLeeUSTC/spacemacs-personal.git ~/.spacemacs.d/
+   # +END_SRC
 
-*Nothing difference!*
-
-The forked version is only a few commits behind the original repo, becuase sometimes the original repo can't functional well.
+   At last, open emacs, and wait for some minutes
 
 ** What's the highlight of this configuration
-1. It's a highly optimized Spacemacs configuration, you should use the configuration together with the *develop* branch of the officially Spacemacs.
-2. I prefer to the =Ivy= completion interface, so I removed many helm related packages but keep the =helm-ag= package. The =counsel-ag= counterpart is not powerful as =helm-ag=.
-3. I also removed some packages I don't have any chance to use. The complete list lies in the exclude section of the =init.el= file.
-4. I also exclude the =Spaceline= package, cause it's easy to frozen the Emacs with this package enabled. So I create my own mode line configuration based on =Spaceline=.
-5. The =Swiper= package sometimes frozen the Emacs UI when you split the window with very long lines. You could use `pkill -SIGUSR2 -i emacs` command line to break the frozen.
+   1. It's a highly optimized Spacemacs configuration, you should use the configuration together with the *develop* branch of the officially Spacemacs.
+   2. I prefer to the =Ivy= completion interface, so I removed many helm related packages but keep the =helm-ag= package. The =counsel-ag= counterpart is not powerful as =helm-ag=.
+   3. I also removed some packages I don't have any chance to use. The complete list lies in the exclude section of the =init.el= file.
+   4. I also exclude the =Spaceline= package, cause it's easy to frozen the Emacs with this package enabled. So I create my own mode line configuration based on =Spaceline=.
+   5. The =Swiper= package sometimes frozen the Emacs UI when you split the window with very long lines. You could use `pkill -SIGUSR2 -i emacs` command line to break the frozen.
 
 ** Happing Hacking
+   Thanks to spacemacs community, syl20bnr and zilongshanren, they bring me to the wonderful world of emacs! Awesome!
