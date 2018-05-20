@@ -12,7 +12,6 @@
    #+END_SRC
 
    Then clone this project
-
    #+BEGIN_SRC
    git clone https://github.com/StephenLeeUSTC/spacemacs-personal.git ~/.spacemacs.d/
    #+END_SRC
